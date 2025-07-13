@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Burger Carioca</title>
+  <link rel="icon" type="image" href="./imagens/logo.jpg">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<!-- NAV -->
+	<header>
+        <div class="navbar-container">
+            <div class="logo">
+                <a href="#logo"><img src="imagens/logo.jpg" alt="Logo"></a>
+            </div>
+            <nav id="nav-menu" class="menu">
+                <ul>
+                    <li><a href="#destaques">Destaques</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#encomenda">Encomenda</a></li>
+                    <li><a href="#contactos">Contactos</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+<div id="datetime-popup" class="popup hidden">
+  <button id="close-popup" class="close-btn" aria-label="Fechar pop-up">&times;</button>
+  <div class="content">
+    <h3>Data e Hora Atual</h3>
+    <p id="datetime"></p>
+  </div>
+</div>
+<button id="open-popup" class="open-btn" aria-label="Abrir pop-up de data e hora">🕒</button>
+
+	<!-- MAIN -->
+<main>
+
+	<!-- SLIDER -->
+  <div class="slider" id="logo">
+    <img id="slider-img" src="" alt="Slide" />
+    <div class="dots" id="dots-container"></div>
+    <button class="prev">❮</button>
+    <button class="next">❯</button>
+  </div>
+
+  <!-- SECTIONS -->
+
+  <!-- DESTAQUES -->
+  <section class="destaques" id="destaques">
+    <h2>DESTAQUES</h2>
+    <div class="destaques-container">
+      <div class="coluna">
+        <a href="https://www.instagram.com/p/C7CeQXuMv7t/" target="_blank"><img src="imagens/d1.jpg" alt="Destaque 1" /></a>
+        <a href="https://www.instagram.com/p/DH_R49OpERI/" target="_blank"><img src="imagens/d2.jpg" alt="Destaque 2" /></a>
+        <a href="https://www.instagram.com/p/DG3v7UAT5XQ/" target="_blank"><img src="imagens/d3.jpg" alt="Destaque 3" /></a>
+      </div>
+      <div class="coluna">
+        <a href="https://www.instagram.com/p/DFIaX8tzUM4/" target="_blank"><img src="imagens/d4.jpg" alt="Destaque 4" /></a>
+        <a href="https://www.instagram.com/p/DE2SKGyTHFk/" target="_blank"><img src="imagens/d5.jpg" alt="Destaque 5" /></a>
+        <a href="https://www.instagram.com/p/DEhrVf5zwkb/?img_index=1" target="_blank"><img src="imagens/d6.jpg" alt="Destaque 6" /></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+	<section class="menu-section" id="menu">
+    <h1>MENU</h1>
+    <h2>QUER BATATA FRITA E BEBIDA? <br> ESCOLHA O ADICIONAL DO 'TRIO'! NELE, POR MAIS €3,00, <br> O SEU LANCHE ACOMPANHA UMA PORÇÃO DE BATATA FRITA E UMA BEBIDA.</h2>
+
+    <div class="produtos">
+      <div class="produto">
+        <img src="imagens/m1.jpg" alt="Carioca">
+        <h3>CARIOCA</h3>
+        <p>Pão, carne suculenta, queijo Godan derretido, ovo frito, bacon crocante e salada fresca.</p>
+        <div class="preco">€ 9,90</div>
+      </div>
+
+      <div class="produto">
+        <img src="imagens/m2.jpg" alt="Arpoador">
+        <h3>ARPOADOR</h3>
+        <p>Pão, carne macia, queijo cheddar, cheddar cremoso, bacon crocante e cebola caramelizada.</p>
+        <div class="preco">€ 9,40</div>
+      </div>
+
+      <div class="produto">
+        <img src="imagens/m3.jpg" alt="Leblon">
+        <h3>LEBLON</h3>
+        <p>Pão, carne saborosa, queijo Godan, bacon crocante, molho especial e anéis de cebola empanados.</p>
+        <div class="preco">€ 9,90</div>
+      </div>
+
+      <div class="produto">
+        <img src="imagens/m4.jpg" alt="Maracanã">
+        <h3>MARACANÃ</h3>
+        <p>Pão, carne suculenta, queijo Godan, bacon crocante, catupiry empanado e salada fresca.</p>
+        <div class="preco">€ 11,90</div>
+      </div>
+
+      <div class="produto">
+        <img src="imagens/m5.jpg" alt="Copacabana">
+        <h3>COPACABANA</h3>
+        <p>Pão, carne macia, queijo Godan, bacon crocante, molho barbecue e cebola crispy.</p>
+        <div class="preco">€ 8,90</div>
+      </div>
+
+      <div class="produto">
+        <img src="imagens/m6.jpg" alt="Corcovado">
+        <h3>CORCOVADO</h3>
+        <p>Pão, carne suculenta, queijo Godan, bacon crocante e molho especial.</p>
+        <div class="preco">€ 8,90</div>
+      </div>
+
+      <div class="produto">
+        <img src="imagens/m7.jpg" alt="Ipanema">
+        <h3>IPANEMA</h3>
+        <p>Pão, carne suculenta com cheddar cremoso, queijo cheddar, bacon crocante e batata frita.</p>
+        <div class="preco">€ 11,90</div>
+      </div>
+
+      <div class="produto">
+        <img src="imagens/m8.jpg" alt="Burger Vegano">
+        <h3>BURGER VEGANO</h3>
+        <h4>JARDIM BOTÂNICO</h4>
+        <p>Pão, blend de soja, cheddar cremoso, queijo, salada fresca e cebola.</p>
+        <div class="preco">€ 8,90</div>
+      </div>
+
+      <div class="produto">
+        <img src="imagens/m9.jpg" alt="ChocoBurger">
+        <h3>BURGER DOCE</h3>
+        <h4>CHOCOBURGER</h4>
+        <p>Mini pão de brioche macio, bastante Nutella e marshmallow.</p>
+        <div class="preco">€ 3,50</div>
+      </div>
+
+      <div class="produto">
+        <img src="imagens/m10.jpg" alt="Big Maracanã">
+        <h3>BIG MARACANÃ</h3>
+        <p>Pão, 2 carnes suculentas, queijo Godan, bacon, catupiry empanado e salada. Recheio em dobro.</p>
+        <div class="preco">€ 14,90</div>
+      </div>
+
+      <div class="produto">
+        <img src="imagens/m11.jpg" alt="Big Copacabana">
+        <h3>BIG COPACABANA</h3>
+        <p>Pão, 2 carnes macias, queijo Godan, bacon, barbecue e cebola crispy. Recheio em dobro.</p>
+        <div class="preco">€ 11,90</div>
+      </div>
+
+      <div class="produto">
+        <img src="imagens/m12.jpg" alt="Big Corcovado">
+        <h3>BIG CORCOVADO</h3>
+        <p>Pão, 2 carnes suculentas, queijo Godan, bacon crocante e molho especial. Recheio em dobro.</p>
+        <div class="preco">€ 11,90</div>
+      </div>
+
+      <div class="produto">
+        <img src="imagens/m13.jpg" alt="Big Ipanema">
+        <h3>BIG IPANEMA</h3>
+        <p>Pão, 2 carnes com cheddar cremoso, queijo cheddar, bacon e batata frita. Recheio em dobro.</p>
+        <div class="preco">€ 14,90</div>
+      </div>
+
+      <div class="produto">
+        <img src="imagens/m14.jpg" alt="Big Carioca">
+        <h3>BIG CARIOCA</h3>
+        <p>Pão, 2 carnes suculentas, queijo Godan, ovo frito, bacon e salada. Recheio em dobro.</p>
+        <div class="preco">€ 12,90</div>
+      </div>
+
+      <div class="produto">
+        <img src="imagens/m15.jpg" alt="Big Arpoador">
+        <h3>BIG ARPOADOR</h3>
+        <p>Pão, 2 carnes macias, queijo cheddar, cheddar cremoso, bacon e cebola caramelizada. Recheio em dobro.</p>
+        <div class="preco">€ 12,40</div>
+      </div>
+
+      <div class="produto">
+        <img src="imagens/m16.jpg" alt="Big Leblon">
+        <h3>BIG LEBLON</h3>
+        <p>Pão, 2 carnes saborosas, queijo Godan, molho especial, bacon e anéis de cebola empanados. Recheio em dobro.</p>
+        <div class="preco">€ 12,90</div>
+      </div>
+
+      <div class="produto">
+        <img src="imagens/m17.jpg" alt="Batata Recheada">
+        <h3>BATATA FRITA RECHEADA</h3>
+        <p>Porção de batata frita com cheddar cremoso e bacon.</p>
+        <div class="preco">€ 4,50</div>
+      </div>
+
+      <div class="produto">
+        <img src="imagens/m18.jpg" alt="Batata Frita">
+        <h3>BATATA FRITA</h3>
+        <p>Porção de batata frita.</p>
+        <div class="preco">€ 2,50</div>
+      </div>
+
+      <div class="produto">
+        <img src="imagens/m19.jpg" alt="Sticks Mozzarella">
+        <h3>STICKS DE QUEIJO MOZZARELA EMPANADO</h3>
+        <p>Porção com 8 unidades.</p>
+        <div class="preco">€ 6,50</div>
+      </div>
+
+      <div class="produto">
+        <img src="imagens/m20.jpg" alt="Anéis de Cebola">
+        <h3>ANÉIS DE CEBOLA</h3>
+        <p>12 unidades de anéis de cebola empanados.</p>
+        <div class="preco">€ 4,00</div>
+      </div>
+
+      <div class="produto">
+        <img src="imagens/m21.jpg" alt="Mini Catupiry">
+        <h3>PORÇÃO DE MINI CATUPIRY EMPANADO</h3>
+        <p>Porção com 6 unidades.</p>
+        <div class="preco">€ 6,50</div>
+      </div>
+
+      <div class="produto">
+        <img src="imagens/m22.jpg" alt="Salgados">
+        <h3>PORÇÃO DE SALGADOS</h3>
+        <p>Porção de 10 unidades.</p>
+        <div class="preco">€ 6,50</div>
+      </div>
+    </div>
+
+    <!-- MENU BEBIDAS -->
+    <h1 class="espaco">BEBIDAS</h1>
+    <div class="bebidas">
+      <h2><span>COCA COLA 330ML</span> <span>€ 1,40</span></h2>
+      <h2><span>COCA COLA ZERO 330ML</span> <span>€ 1,40</span></h2>
+      <h2><span>GUARANÁ 330ML</span> <span>€ 1,40</span></h2>
+      <h2><span>7 UP 330ML</span> <span>€ 1,40</span></h2>
+      <h2><span>MONSTER TRADICIONAL 473ML</span> <span>€ 1,40</span></h2>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+	<section id="sobre" class="sobre-section">
+  <div class="sobre-container">
+    <h1>SOBRE NÓS</h1>
+    <p class="destaque">Um hambúrguer com todo o sabor do Rio de Janeiro!</p>
+
+    <p>Na <strong>Burger Carioca</strong>, trazemos o autêntico sabor carioca até Coimbra! O nosso objetivo é proporcionar uma experiência gastronómica única, onde cada hambúrguer é preparado com ingredientes frescos e com o tempero especial do Brasil.</p>
+
+    <p>Estamos localizados no coração da cidade, na <strong>Rua Sá da Bandeira</strong>, em plena <strong>Praça da República</strong>, na Galeria Avenida. Um espaço acolhedor, descontraído e com atendimento sempre simpático — de segunda a sábado.</p>
+
+    <p>Seja para um almoço rápido, um jantar com amigos ou aquela vontade de saborear algo diferente, a Burger Carioca é a escolha certa.</p>
+
+    <p class="convite">Vem experimentar e apaixona-te pelo sabor do Rio em Coimbra!</p>
+  </div>
+  </section>
+
+  <!-- ENCOMENDA -->
+	<section class="encomenda" id="encomenda">
+  <div class="encomenda-overlay">
+    <h2>Gostaria de encomendar?</h2>
+    <p>Número WhatsApp: <strong>+351 960 263 115</strong></p>
+  </div>
+  <div class="btn-container">
+    <a href="#compra-online" class="btn-encomendar">Encomendar Já</a>
+  </div>
+  </section>
+
+</main>
+
+  <!-- FOOTER -->
+
+  <!-- CONTACTOS -->
+<footer id="contactos">
+  <div class="footer-container">
+    <div class="footer-contactos">
+      <h2>Contactos</h2>
+      <p>Endereço: Rua Sá da Bandeira, Praça da República. Galeria Avenida</p>
+      <p>Telemóvel: 960 263 115</p>
+      <div class="footer-socials">
+        <a href="https://www.facebook.com/BurgerCariocaCoimbra?locale=pt_PT" target="_blank"><img src="imagens/fb.png" alt="Facebook" /></a>
+        <a href="https://www.instagram.com/burgercariocacoimbra/" target="_blank"><img src="imagens/inst.png" alt="Instagram" /></a>
+      </div>
+  </div>
+
+    <div class="footer-mapa">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3092.4710006556286!2d-8.425886124349696!3d40.21171257147166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd22f989775a8225%3A0xbf0ac3cee1b0719a!2sBurger%20Carioca%20Coimbra!5e0!3m2!1spt-PT!2spt!4v1719063721620!5m2!1spt-PT!2spt"
+        width="100%"
+        height="200"
+        style="border:0; border-radius: 12px;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>
+      Vitor Ouros | <a href="mailto:vitorouros@hotmail.com">vitorouros@hotmail.com</a> |
+      Instituto Superior Miguel Torga | Multimédia | Programação 1 | 1º Ano | 2024/2025
+      <a href="https://www.facebook.com/aeismtcoimbra?locale=pt_PT" target="_blank"><img src="imagens/fb.png" alt="Facebook" class="small-icon" /></a>
+      <a href="https://www.ismt.pt/pt" target="_blank"><img src="imagens/ismt.png" alt="ISMT" class="small-icon" /></a>
+    </p>
+  </div>
+</footer>
+	<script src="script.js"></script>
+</body>
+</html>
